@@ -6,7 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
-
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: #afc6d2;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+#introduction {
+  background-color: #afc6d2;
+  color: black;
+  padding: 70px;
+  text-align: justify;
+}
+  #info {
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+    #footer {
+      color: black;
+      padding: 40px;
+      text-align: center;
+}
+</style>
 <title>Nikki Kheifets</title></head>
   <header><img src="C:\Users\nikki\Documents\School\Career Foundry\Front end Development\Portfolio Site (Nikki Kheifets)\NK Logo.png" alt="Logo" >
     <header id="myHeader">

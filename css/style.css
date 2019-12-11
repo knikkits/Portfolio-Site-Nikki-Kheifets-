@@ -4,23 +4,23 @@
   width: 100%;
 }
 a {
-color: #00000;
+color: #FFFFFF;
 text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-color: #1f0050;
+color: #FFFFFF;
 }
 a:hover {
-color: #6b3bb6;
+color: #afc6d2;
 text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-color: #1f0050;
+color: #afc6d2;
 }
 body {
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gelasio', serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -33,6 +33,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -43,35 +44,54 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  padding: 0px 130px
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
+h5 {
+  font-size: .75em;
+  font-weight: 400;
+  font-style: italic;
+}
+p {
+  padding: 0px 130px;
+}
+li {
+  padding: 0px 130px;
+}
+img
+.splash.screen {
+  padding-left:130px;
+  padding-right: 30px;
+  float: left;
+}
+p
+.myWork {
+  float: right;
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #1f0050;
-  color: #ffffff !important; /* needed to override the default link color */
+  background-color: #afc6d2;
+  color: #000000 !important; /* needed to override the default link color */
   font-weight: 300;
-  padding: 5px;
-  border-radius: 2px;
-  border-bottom: 2px solid #626262; /* width of the border, type, color */
+  padding: 2px 15px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-}body
-footer {
 }
-.button.contact {
-  background-color: transparent;
-  color: #FFFFFF !important;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-.button.contact:hover {
-  background-color: #FFFFFF;
-  color: #ff7f50 !important;
-}footer
+   .button.contact {
+    background-color: transparent!important;
+    color: #000000 !important;
+    text-transform: lowercase;
+    border: 2px solid #afc6d2 !important!;
+    border-radius: 25px
+   }
+   .button.contact:hover {
+    background-color: #FFFFFF!important;
+    color: #3d3b70 !important;

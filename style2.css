@@ -1,0 +1,12 @@
+footer }
+.button.contact {
+ background-color: transparent!important;
+ color: #FFFFFF !important;
+ text-transform: uppercase;
+ border: 2px solid #3d3b70!important!;
+ border-radius: 25px
+}
+.button.contact:hover {
+ background-color: #FFFFFF!important;
+ color: #3d3b70 !important;
+} footer
