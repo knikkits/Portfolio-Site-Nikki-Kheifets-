@@ -1,5 +1,6 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+flex-shrink: 29.0|initial|inherit;
     img {
   width: 100%;
 }
