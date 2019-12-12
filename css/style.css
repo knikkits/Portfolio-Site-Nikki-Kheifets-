@@ -61,30 +61,30 @@ p {
 li {
   padding: 0px 130px;
 }
-img
-.splash.screen {
-  padding-left:130px;
-  padding-right: 30px;
+picture {
   float: left;
+  margin-left: 130px;
+  margin-right:20px;
 }
-p
-.myWork {
-  float: right;
-}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #afc6d2;
-  color: #000000 !important; /* needed to override the default link color */
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF; /* needed to override the default link color */
   font-weight: 300;
   padding: 2px 15px;
-  border-radius: 10px;
-  border: 2px solid #FFFFFF; /* width of the border, type, color */
+  border-radius: 10px;/
   transition: 0.2s opacity;
-}
+
+  }
 .button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
    .button.contact {
     background-color: transparent!important;
     color: #000000 !important;
@@ -93,5 +93,5 @@ p
     border-radius: 25px
    }
    .button.contact:hover {
-    background-color: #FFFFFF!important;
-    color: #3d3b70 !important;
+    background-color: #000000!important;
+    color: #FFFFFF !important;
