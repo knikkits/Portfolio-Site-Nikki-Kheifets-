@@ -1,34 +1,38 @@
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-flex-shrink: 29.0|initial|inherit;
-    img {
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+img {
   width: 100%;
 }
 a {
-color: #FFFFFF;
-text-decoration: none; /* No underlining */
+  color: #FFFFFF;
+  text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 a:hover {
-color: #afc6d2;
-text-decoration: underline; /* Underlining when hovering over a link */
+  color: #FFFFFF;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-color: #afc6d2;
+  color: #afc6d2;
 }
 body {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   font-family: 'Gelasio', serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+  padding-left:160px;
+  padding-right: 160px;
+}
+* {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6, p, ul, picture {
   line-height: 1.4;
 }
 h1 {
@@ -38,28 +42,36 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  padding: 0px 130px
+  margin-left: 120px;
+  margin-top:45px;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 400;
+  margin-top: 25px;
+  margin-right: 250px;
+  text-align: center;
 }
 h5 {
-  font-size: .75em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 300;
   font-style: italic;
+  text-align: center;
+}
+h6 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: left;
 }
 p {
-  padding: 0px 130px;
-}
-li {
   padding: 0px 130px;
 }
 picture {
@@ -67,32 +79,60 @@ picture {
   margin-left: 130px;
   margin-right:20px;
 }
-
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #000000;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF; /* needed to override the default link color */
-  font-weight: 300;
-  padding: 2px 15px;
-  border-radius: 10px;/
-  transition: 0.2s opacity;
-
-  }
-.button:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+main {
+  -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+}
+header {
+  -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+}
+/* Layout styling */
+.row {
+  display: flex;
 }
 
-   .button.contact {
-    background-color: transparent!important;
-    color: #000000 !important;
-    text-transform: lowercase;
-    border: 2px solid #afc6d2 !important!;
-    border-radius: 25px
-   }
-   .button.contact:hover {
-    background-color: #000000!important;
-    color: #FFFFFF !important;
+.column {
+  flex: 50%;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  color: #000000!important;
+  text-transform: lowercase;
+  border: 2px solid #ffffff !important!;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  font-size: .8em;
+  font-weight: 200;
+  padding: 2px 8px;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  border: 2px solid #000000;
+  font-size: .8em;
+  font-weight: 200;
+  padding: 2px 8px;
+}
+
+.button.contact {
+  background-color: transparent!important;
+  color: #000000;
+  text-transform: lowercase;
+  border: 2px solid #f8f8f8 !important!;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.button.contact:hover {
+  background-color: #000000!important;
+  color: #FFFFFF !important;
