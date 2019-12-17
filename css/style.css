@@ -97,8 +97,10 @@ header {
   -moz-box-shadow:    -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
   box-shadow:         -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
 }
-menu {
-  padding: 0 15px;
+.menu{
+  margin-bottom: 20px;
+  float: right;
+  padding:0px 15px;
 }
 /* Layout styling */
 .row {
