@@ -204,9 +204,10 @@ align-self: center;
     font-size: 1em;
 }
 .button.contact:hover {
-  background-color: #000000!important;
+  background-color: #ff837b!important;
   border: 2px solid transparent;
-  color: #FFFFFF !important;
+  color: #000000 !important;
+  opacity: 0.8;
 }
 @media only screen and (min-width: 640px) {
   header {
