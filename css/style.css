@@ -32,51 +32,60 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
-  padding-left:160px;
-  padding-right: 160px;
   margin: 0px auto;
-  }
-  #container {
-      width: 600px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-53%, -60%);
-      &.fin {
-          .path-1, .path-2, .path-3 {
-              stroke-dashoffset: 0;
-          }
-          .path-4 {
-              stroke-width: 18px;
-          }
-      }
-  }
-  .path {
-      fill: none;
-      stroke: #362f3c;
+}
+main {
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-top: 56px;
+}
+header {
+  align: center;
+  width: 97%;
+  padding: 10px 0 4px;
+}
+}
+#container {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53%, -60%);
+  &.fin {
+    .path-1, .path-2, .path-3 {
+      stroke-dashoffset: 0;
+    }
+    .path-4 {
       stroke-width: 18px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    }
   }
-  .path-1 {
-    stroke-dasharray: 1850 2000;
-    stroke-dashoffset: 1851;
-    transition: 5s linear;
-  }
-  .path-2 {
-    stroke-dasharray: 260 1000;
-    stroke-dashoffset: 261;
-    transition: 1.2s linear 5.2s;
-  }
-  .path-3 {
-    stroke-dasharray: 100 1000;
-    stroke-dashoffset: 101;
-    transition: 1s linear 6.5s;
-  }
-  .path-4 {
-    stroke-width: 0;
-    transition: 0.1s linear 7.5s;
-  }
+}
+.path {
+  fill: none;
+  stroke: #362f3c;
+  stroke-width: 18px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.path-1 {
+  stroke-dasharray: 1850 2000;
+  stroke-dashoffset: 1851;
+  transition: 5s linear;
+}
+.path-2 {
+  stroke-dasharray: 260 1000;
+  stroke-dashoffset: 261;
+  transition: 1.2s linear 5.2s;
+}
+.path-3 {
+  stroke-dasharray: 100 1000;
+  stroke-dashoffset: 101;
+  transition: 1s linear 6.5s;
+}
+.path-4 {
+  stroke-width: 0;
+  transition: 0.1s linear 7.5s;
+}
 }
 * {
   box-sizing: border-box;
@@ -161,22 +170,21 @@ header {
   flex: 50%;
 }
 .column.img {
-align-self: center;
+  align-self: center;
   transition:transform 0.25s ease;
   margin-top:50px ;
   margin-bottom:50px;
   padding:27px;
 }
 .column.img:hover {
-    -webkit-transform:scale(2.5); /* or some other value */
-    transform:scale(3);
+  -webkit-transform:scale(2.5); /* or some other value */
+  transform:scale(3);
 }
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+.button { /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   color: #000000!important;
   text-transform: lowercase;
   border: transparent;
-    background-color: #ffbbb7;
+  background-color: #ffbbb7;
   border-radius: 5px;
   margin-bottom: 100px;
   font-size: .8em;
@@ -200,9 +208,9 @@ align-self: center;
   text-transform: lowercase;
   border: 2px solid #f8f8f8 !important!;
   border-radius: 10px;
-    border: 2px solid transparent;
+  border: 2px solid transparent;
   margin-bottom: 10px;
-    font-size: 1em;
+  font-size: 1em;
 }
 .button.contact:hover {
   background-color: #ff837b!important;
@@ -211,24 +219,56 @@ align-self: center;
   opacity: 0.8;
 }
 nav {
-  width: auto;
   float: right;
-  margin-top: 4px;
 }
-  #hero span {
+#hero span {
   display: block;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 150px) {...}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 641px) {...}
 
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+  .navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+  display: inline-block;
+}
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 600px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 800px)
