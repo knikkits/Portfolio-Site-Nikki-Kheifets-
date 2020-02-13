@@ -8,40 +8,6 @@
     background-attachment: fixed;
     background-size: cover;
   }
-  #myHeader {
-    background-color: #000000;
-    padding: 0px 30px;
-    align: center;
-    position: fixed;
-    min-width: 500px;
-  }
-  #hero {
-    color: black;
-    text-align: justify;
-    background-color: #FFFFFF;
-    padding: 95px 0;
-  }
-  #contact {
-    color: black;
-    padding: 80px;
-    text-align: center;
-    min-width: 500px
-  }
-  #logo {
-    float: left;
-    margin-top: 5px;
-  }
-  #menu{
-    margin-bottom: 20px;
-    float: right;
-  }
-  #logo {
-    float: left;
-    margin-top: 5px;
-  }
-  #welcomemessage{
-    text-align: center;
-  }
   * {
     box-sizing: border-box;
   }
@@ -74,14 +40,17 @@
   <header id="myHeader">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href= "index.html"><img class="logo" src="img/NK-Logo.png" alt="NK logo" style="width:45px;height:50px;">
-          <nav>
-            <br>
-            <script src="https://kit.fontawesome.com/59b1213322.js" crossorigin="anonymous"></script>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-            <a href="#contact" class="menu">&middot; Contact &middot;</a>
-            <a href="work.html" class="menu">&middot; Work &middot;</a>
-            <a href="about.html" class="menu">&middot; About &middot;</a>
+        <a href= "index.html"><img class="logo" src="img/NK-Logo.png" alt="NK logo" style="width:45px;height:50px;"></a>
+        <nav>
+          <ul>
+            <li><a href="work.html">&middot; Work &middot;</a></li>
+            <li><a href="about.html">About &middot;</a></li>
+            <li><a href="#contact">Contact &middot;</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
           </header>
           <main id= "hero">
             <h1>My Sketches</h1>
