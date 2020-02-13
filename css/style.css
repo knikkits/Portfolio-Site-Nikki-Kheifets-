@@ -34,6 +34,35 @@ body {
   color: #4a4a4a;
   margin: 0px auto;
 }
+#myHeader {
+  background-color: #000000;
+  padding: 0px 30px;
+  position: fixed;
+}
+#hero {
+  color: black;
+  text-align: justify;
+  background-color: #FFFFFF;
+  padding: 95px 0;
+}
+#contact {
+  color: black;
+  padding: 80px;
+  text-align: center;
+  min-width: 500px
+}
+#logo {
+  float: left;
+  margin-top: 5px;
+
+}
+#menu{
+  margin-bottom: 20px;
+  float: right;
+}
+#welcomemessage{
+  text-align: center;
+}
 main {
   margin-left: 160px;
   margin-right: 160px;
@@ -57,8 +86,6 @@ header {
     }
     .path-4 {
       stroke-width: 18px;
-    }
-  }
 }
 .path {
   fill: none;
@@ -235,11 +262,10 @@ nav {
 #hero span {
   display: block;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 150px) {...}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 641px) {...}
+
+/* Nav bar styling */
+
 
 .navtoggle li:not(:last-child) {
   display: inline-block;
@@ -274,11 +300,69 @@ nav > ul {
   margin: 1em 0;
   display: inline-block;
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 600px) {...}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  padding: 0px 30px;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 800px)
+  main {
+    padding-top: 80px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
