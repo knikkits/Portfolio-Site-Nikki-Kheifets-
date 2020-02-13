@@ -218,6 +218,17 @@ header {
   color: #000000 !important;
   opacity: 0.8;
 }
+.gallery.colomn {
+    background-color: transparent!important;
+color: #FFFFFF!important;
+  column-gap: 40px;
+}
+.gallery.colomn:hover {
+    background-color: transparent!important;
+color: #FFFFFF !important;
+  column-gap: 40px;
+
+}
 nav {
   float: right;
 }
@@ -262,7 +273,6 @@ nav > ul {
   padding: 0;
   margin: 1em 0;
   display: inline-block;
-}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
