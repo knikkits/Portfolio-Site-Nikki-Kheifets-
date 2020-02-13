@@ -1,330 +1,313 @@
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
 img {
   width: 100%;
 }
+
 a {
   color: #FFFFFF;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #FFFFFF;
 }
+
 a:hover {
   color: #ff837b !important;
   border: 2px solid #000000;
   border-radius: 10px;
   background-color: #000000;
 }
-a:active { /* selected link */
-  color: #afc6d2
+
+a:active {
+  /* selected link */
+  color: #afc6d2;
   border: 2px solid #000000;
   border-radius: 10px;
   color: #000000 !important;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
 }
+
 body {
   font-family: 'Gelasio', serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
   margin: 0px auto;
 }
+
 #myHeader {
   background-color: #000000;
   padding: 0px 30px;
   position: fixed;
 }
+
 #hero {
   color: black;
   text-align: justify;
   background-color: #FFFFFF;
   padding: 95px 0;
 }
+
 #contact {
   color: black;
   padding: 80px;
   text-align: center;
   min-width: 500px
 }
+
 #logo {
   float: left;
   margin-top: 5px;
-
 }
-#menu{
+
+#menu {
   margin-bottom: 20px;
   float: right;
 }
-#welcomemessage{
+
+#welcomemessage {
   text-align: center;
 }
-#link{
+
+#link {
   margin-left: 130px;
 }
+
 main {
   margin-left: 160px;
   margin-right: 160px;
   padding-top: 56px;
 }
+
 header {
-  align: center;
   width: 97%;
   padding: 10px 0 4px;
 }
-}
+
 #container {
   width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-53%, -60%);
+
   &.fin {
     .path-1, .path-2, .path-3 {
       stroke-dashoffset: 0;
     }
+
     .path-4 {
       stroke-width: 18px;
     }
   }
-}
-.path {
-  fill: none;
-  stroke: #362f3c;
-  stroke-width: 18px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.path-1 {
-  stroke-dasharray: 1850 2000;
-  stroke-dashoffset: 1851;
-  transition: 5s linear;
-}
-.path-2 {
-  stroke-dasharray: 260 1000;
-  stroke-dashoffset: 261;
-  transition: 1.2s linear 5.2s;
-}
-.path-3 {
-  stroke-dasharray: 100 1000;
-  stroke-dashoffset: 101;
-  transition: 1s linear 6.5s;
-}
-.path-4 {
-  stroke-width: 0;
-  transition: 0.1s linear 7.5s;
-}
-}
-* {
-  box-sizing: border-box;
-}
 
-h1, h2, h3, h4, h5, h6, p, ul, picture {
-  line-height: 1.4;
-}
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  text-align: center;
-}
+  .path {
+    fill: none;
+    stroke: #362f3c;
+    stroke-width: 18px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
 
-h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  text-align: center;
-}
+  .path-1 {
+    stroke-dasharray: 1850 2000;
+    stroke-dashoffset: 1851;
+    transition: 5s linear;
+  }
 
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  margin-left: 120px;
-  margin-top:45px;
-}
-h4 {
-  font-size: 1.25em;
-  font-weight: 400;
-  margin-top: 25px;
-  margin-right: 250px;
-  text-align: center;
-}
-h5 {
-  font-size: 1.25em;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-}
-h6 {
-  font-size: 1.5em;
-  font-weight: 400;
-  text-align: left;
-}
-p {
-  padding: 0px 130px;
-}
-picture {
-  float: left;
-  margin-left: 130px;
-  margin-right:20px;
-}
-main {
-  -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  box-shadow:         5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  box-shadow:         -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-}
-header {
-  -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  box-shadow:         5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-  box-shadow:         -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
-}
+  .path-2 {
+    stroke-dasharray: 260 1000;
+    stroke-dashoffset: 261;
+    transition: 1.2s linear 5.2s;
+  }
 
-.menu{
-  margin-bottom: 20px;
-  float: right;
-  padding:0px 15px;
+  .path-3 {
+    stroke-dasharray: 100 1000;
+    stroke-dashoffset: 101;
+    transition: 1s linear 6.5s;
+  }
 
-}
-/* Layout styling */
-.row {
-  display: flex;
-}
+  .path-4 {
+    stroke-width: 0;
+    transition: 0.1s linear 7.5s;
+  }
 
-.column {
-  flex: 50%;
-}
-.column.img {
-  align-self: center;
-  transition:transform 0.25s ease;
-  margin-top:50px ;
-  margin-bottom:50px;
-  padding:27px;
-}
-.column.img:hover {
-  -webkit-transform:scale(2.5); /* or some other value */
-  transform:scale(3);
-}
-.button { /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  color: #000000!important;
-  text-transform: lowercase;
-  border: transparent;
-  background-color: #ffbbb7;
-  border-radius: 5px;
-  margin-bottom: 100px;
-  font-size: .8em;
-  font-weight: 200;
-  padding: 2px 8px;
-}
-.button:hover {
-  background-color: #ffbbb7;
-  color: #000000 !important;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-  border: transparent;
-  font-size: .8em;
-  font-weight: 200;
-  padding: 2px 8px;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.button.contact {
-  background-color: transparent!important;
-  color: #000000;
-  text-transform: lowercase;
-  border: 2px solid #f8f8f8 !important!;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  margin-bottom: 10px;
-  font-size: 1em;
-}
-.button.contact:hover {
-  background-color: #ff837b!important;
-  border: 2px solid transparent;
-  color: #000000 !important;
-  opacity: 0.8;
-}
-.gallery.colomn {
-    background-color: transparent!important;
-color: #FFFFFF!important;
-  column-gap: 40px;
-}
-.gallery.colomn:hover {
-    background-color: transparent!important;
-color: #FFFFFF !important;
-  column-gap: 40px;
+  h1, h2, h3, h4, h5, h6, p, ul, picture {
+    line-height: 1.4;
+  }
 
-}
-nav {
-  float: right;
-}
-#hero span {
-  display: block;
-}
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+    text-align: center;
+  }
 
+  h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+  }
 
-/* Nav bar styling */
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 45px;
+  }
 
+  h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 250px;
+    text-align: center;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-  .navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
-  display: inline-block;
-}
+  h5 {
+    font-size: 1.25em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-  padding: 0px 30px;
+  h6 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  p {
+    padding: 0px 130px;
+  }
+
+  picture {
+    float: left;
+    margin-left: 130px;
+    margin-right: 20px;
   }
 
   main {
-    padding-top: 80px;
+    -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  }
+
+  header {
+    -webkit-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    box-shadow: 5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -webkit-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+    box-shadow: -5px 0px 20px 0px rgba(50, 50, 50, 0.6);
+  }
+
+  .menu {
+    margin-bottom: 20px;
+    float: right;
+    padding: 0px 15px;
+  }
+
+  /* Layout styling */
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+  }
+
+  .column.img {
+    align-self: center;
+    transition: transform 0.25s ease;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 27px;
+  }
+
+  .column.img:hover {
+    -webkit-transform: scale(2.5);
+    /* or some other value */
+    transform: scale(3);
+  }
+
+  .button {
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    color: #000000 !important;
+    text-transform: lowercase;
+    border: transparent;
+    background-color: #ffbbb7;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    font-size: .8em;
+    font-weight: 200;
+    padding: 2px 8px;
+  }
+
+  .button:hover {
+    background-color: #ffbbb7;
+    color: #000000 !important;
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+    border: transparent;
+    font-size: .8em;
+    font-weight: 200;
+    padding: 2px 8px;
+  }
+
+  .button.contact {
+    background-color: transparent !important;
+    color: #000000;
+    text-transform: lowercase;
+    border: 2px solid #f8f8f8 !important !;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .button.contact:hover {
+    background-color: #ff837b !important;
+    border: 2px solid transparent;
+    color: #000000 !important;
+    opacity: 0.8;
+  }
+
+  .gallery.colomn {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    column-gap: 40px;
+  }
+
+  .gallery.colomn:hover {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    column-gap: 40px;
   }
 
   nav {
-    width: auto;
     float: right;
-    margin-top: 4px;
   }
 
+  #hero span {
+    display: block;
+  }
+
+  /* Nav bar styling */
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -333,42 +316,76 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  nav > ul {
-    margin: 1em 0;
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
   }
 
-  nav > ul > li {
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
     display: inline-block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
+  /* ==============================
+  Medium devices (640px and larger)
+  ================================= */
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 0px 30px;
+    }
 
+    main {
+      padding-top: 80px;
+    }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58.33%;
-  }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
 
-  .col-lg-6 {
-    width: 50%;
-  }
+    .navtoggle li:last-child {
+      display: none;
+    }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    nav>ul {
+      margin: 1em 0;
+    }
 
+    nav>ul>li {
+      display: inline-block;
+    }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
+    /* ==============================
+    Large devices (1024px or larger)
+    ================================= */
+    @media only screen and (min-width: 1024px) {
+}
