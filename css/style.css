@@ -86,6 +86,8 @@ header {
     }
     .path-4 {
       stroke-width: 18px;
+    }
+  }
 }
 .path {
   fill: none;
@@ -339,6 +341,7 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+
 
 /* ==============================
 Large devices (1024px or larger)
