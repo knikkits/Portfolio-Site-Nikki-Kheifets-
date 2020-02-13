@@ -63,6 +63,9 @@ body {
 #welcomemessage{
   text-align: center;
 }
+#link{
+  margin-left: 130px;
+}
 main {
   margin-left: 160px;
   margin-right: 160px;
