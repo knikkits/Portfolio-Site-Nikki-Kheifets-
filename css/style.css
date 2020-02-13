@@ -70,12 +70,12 @@ main {
   margin-left: 160px;
   margin-right: 160px;
   padding-top: 56px;
+    display: block;
 }
 header {
-  align: center;
-  width: 97%;
   padding: 10px 0 4px;
-}
+  width: 97%
+  }
 }
 #container {
   width: 600px;
