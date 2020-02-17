@@ -160,7 +160,7 @@ h6 {
   text-align: left;
 }
 p {
-  padding: 0px 130px;
+  padding: 0px 180px;
 }
 picture {
   float: left;
@@ -197,6 +197,7 @@ header {
 
 .column {
   flex: 50%;
+  margin-left: 180px;
 }
 .column.img {
   align-self: center;
@@ -336,7 +337,7 @@ padding: 0 15px;
  body{
    display: inline;
   }
-  
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -372,26 +373,10 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
 
   .container {
     max-width: 1200px;
