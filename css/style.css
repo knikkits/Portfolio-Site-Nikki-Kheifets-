@@ -329,24 +329,8 @@ nav {
   padding: 0 0 10px;
 }
 
-
-nav > ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
 nav > ul > li > a {
 padding: 0 15px;
-}
-
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-color: #ff837b;
-}
-
-nav > ul > li > a:active { /* selected link */
-color: #ff837b;
 }
 
 /* ==============================
