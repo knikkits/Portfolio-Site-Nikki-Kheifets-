@@ -72,6 +72,7 @@ main {
   padding-top: 56px;
     display: block;
 }
+
 header {
   padding: 10px 0 4px;
   width: 97%
@@ -119,7 +120,7 @@ header {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, picture {
+h1, h2, h3, h4, h5, h6, p, ul, picture, {
   line-height: 1.4;
 }
 h1 {
@@ -332,7 +333,9 @@ nav {
 nav > ul > li > a {
 padding: 0 15px;
 }
-
+ body{
+   display: inline;
+ }
 
 /* ==============================
 Medium devices (640px and larger)
