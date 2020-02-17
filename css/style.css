@@ -264,40 +264,89 @@ nav {
   display: block;
 }
 
+/*mobile display*/
+
+@media only screen and (max-width: 600px) {
+
+  .mobile-displaynone {
+    display: none;
+  }
+
+  .row-mobile::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  .row-mobile {
+    padding-bottom: 25px;
+  }
+}
 
 /* Nav bar styling */
 
+.nav-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: none;
+.icon {
+  display: run-in;
+  color: #00000;
+
 }
-.navtoggle, .navtoggle.responsive {
+  .navtoggle li:not(:last-child) {
+      display: none;
+    }
+
+    .navtoggle li:last-child {
+      display: inline-block;
+    }
+    .navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 30px;
-  padding-top:10px;
-}
-  .navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle li .icon {
+  display:run-in;
+  position: absolute;
+  padding-right: 25px;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
+
 nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
-  display: inline-block;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+nav > ul > li > a {
+padding: 0 15px;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+color: #ff837b;
+}
+
+nav > ul > li > a:active { /* selected link */
+color: #ff837b;
 }
 
 /* ==============================
