@@ -72,6 +72,7 @@ main {
   padding-top: 56px;
     display: block;
 }
+
 header {
   padding: 10px 0 4px;
   width: 97%
@@ -82,11 +83,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-53%, -60%);
-  &.fin {
-    .path-1, .path-2, .path-3 {
-      stroke-dashoffset: 0;
-    }
+}
     .path-4 {
       stroke-width: 18px;
     }
@@ -123,7 +120,7 @@ header {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, picture {
+h1, h2, h3, h4, h5, h6, p, ul, picture, {
   line-height: 1.4;
 }
 h1 {
@@ -163,7 +160,7 @@ h6 {
   text-align: left;
 }
 p {
-  padding: 0px 130px;
+  padding: 0px 180px;
 }
 picture {
   float: left;
@@ -199,6 +196,7 @@ header {
 }
 
 .column {
+  text-align: center;
   flex: 50%;
 }
 .column.img {
@@ -211,6 +209,10 @@ header {
 .column.img:hover {
   -webkit-transform:scale(2.5); /* or some other value */
   transform:scale(3);
+}
+.column.skills {
+  margin-left: 180px;
+  text-align: left;
 }
 .button { /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   color: #000000!important;
@@ -268,43 +270,77 @@ nav {
   display: block;
 }
 
+/*mobile display*/
+
+@media only screen and (max-width: 600px) {
+
+  .mobile-displaynone {
+    display: none;
+  }
+
+  .row-mobile::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  .row-mobile {
+    padding-bottom: 25px;
+  }
+}
 
 /* Nav bar styling */
 
+.nav-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
+.icon {
+  display: run-in;
+  color: #00000;
+
 }
-.navtoggle li:last-child {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
+  .navtoggle li:not(:last-child) {
+      display: none;
+    }
+
+    .navtoggle li:last-child {
+      display: inline-block;
+    }
+    .navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-  .navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle li .icon {
+  display:run-in;
+  position: absolute;
+  padding-right: 25px;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
-  display: inline-block;
+
+nav > ul > li > a {
+padding: 0 15px;
 }
+ body{
+   display: inline;
+  }
 
 /* ==============================
 Medium devices (640px and larger)
@@ -341,34 +377,13 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
 
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
